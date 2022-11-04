@@ -1,10 +1,12 @@
-import { Tab, TabContainer,Container, Row, Col }  from "react-bootstrap";
+import { Tab, TabContainer,Container, Row, Col, Nav, NavItem, NavLink }  from "react-bootstrap";
 import projImg1 from "../assets/img/projImg1.png";
 import projImg2 from "../assets/img/projImg2.png";
 import projImg3 from "../assets/img/projImg3.png";
 import projImg4 from "../assets/img/projImg4.png";
 import projImg5 from "../assets/img/projImg5.png";
 import projImg6 from "../assets/img/projImg6.png";
+import {ProjectsCard} from "./ProjectsCard";
+import colorSharp2 from "../assets/img/colorSharp2.png"
 
 export const Projects = () => {
     const projects = [
@@ -46,9 +48,9 @@ export const Projects = () => {
                 <Row>
                     <Col>
                         <h2>Projects</h2>
-                        <P>Lorem Ipsum Lorem Ipsom Lorem Ipusome</P>
-                        <Tab.Container id="project-tabs" defaultActiveKey="first" >
-                        <Nav variant="pills" defaultActiveKey="/home">
+                        <p>Lorem Ipsum Lorem Ipsom Lorem Ipusome</p>
+                        <Tab.Container id="projects-tabs" defaultActiveKey="first" >
+                        <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                             <Nav.Item>
                                 <Nav.Link href="first">Tab One</Nav.Link>
                             </Nav.Item>
@@ -62,7 +64,10 @@ export const Projects = () => {
                                     {
                                         projects.map((project,index) => {
                                             return (
-                                                <p>{project.title}</p>
+                                               <ProjectsCard 
+                                                key={index}
+                                                {...project}
+                                               />
                                             )
                                         })
                                     }
