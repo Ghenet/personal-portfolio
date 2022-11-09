@@ -52,9 +52,12 @@ export const Banner = () => {
                             more pleasant, and more productive. I have been working professionally 
                             as a developer since 2012 and hold a Bachelor’s in Computer Science from 
                             Eritrea Institute of Technology.
+                        </p>    
+                        <p>    
                             Outside of work I enjoy spending time with my family and friends(stating the obvious),
-                            drawing on procreate, cooking, sightseeing and learing new languages - Arabic and French.</p>
-                        <button onClick={() => console.log('connect')}>Let's connect <ArrowRightCircle size={25} /></button>
+                            drawing on procreate, cooking, sightseeing and learing new languages - Arabic and French.
+                        </p>
+                        <a href="mailto:ghenet.andemichael@gmail.com" >Let's connect <ArrowRightCircle size={25} /></a>
                     </Col>
                     <Col xs={12} md={6} xl={5}>
                         <img src={headerImg} alt="Header Img" />
