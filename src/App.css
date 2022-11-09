@@ -53,6 +53,7 @@ nav.navbar.scrolled {
 nav.navbar a.navbar-brand {
   width: 9%;
 }
+
 nav.navbar .navbar-nav .nav-link.navbar-link {
   font-weight: 400;
   color: #fff !important;
@@ -418,6 +419,10 @@ line-height: 1.1em;
   font-weight: 400;
   font-size: 15px;
   letter-spacing: 0.8px;
+}
+.proj-txtx span a {
+  text-decoration: none;
+  color: white;
 }
 .background-image-right {
   top: 20%;
